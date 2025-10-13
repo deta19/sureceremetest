@@ -1,68 +1,67 @@
-# ============================
-# SuiteCRM 8 Git Ignore
-# ============================
+# =========================================
+# SuiteCRM / Laravel-style ignore rules
+# Project lives in "app/" folder
+# =========================================
 
-# Node.js dependencies
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Composer dependencies
+app/vendor/
+app/composer.lock
 
-# PHP dependencies
-vendor/
-composer.lock
+# Node dependencies and build outputs
+app/node_modules/
+app/package-lock.json
+app/yarn.lock
+app/dist/
+app/build/
+app/.cache/
 
-# Build artifacts
-/public/build/
-/public/mix-manifest.json
+# Cache and temporary files
+app/cache/
+app/custom/history/
+app/upload/
+app/var/
+app/tmp/
+app/storage/
+app/logs/
+app/session/
+app/public/var/
 
-# Cache and logs
-/cache/
-/var/
-/public/var/
-/upload/
-/data/
-/storage/
-tmp/
-*.log
-
-# IDE and editor files
+# IDE / Editor files
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
+*.swp
+*.swo
+*~
+*.bak
 
-# OS files
+# OS-specific junk
 .DS_Store
 Thumbs.db
 
-# Environment and config
-.env
-.env.local
-.env.development.local
-.env.production.local
-.env.test.local
+# Environment / config
+# .env
+.env.*
+app/.env
+app/config.php
 
-# Docker and temp
-docker-compose.override.yml
-*.pid
-*.seed
-*.pid.lock
+# Logs
+*.log
+app/*.log
+app/logs/*
+app/error_log
 
-# SuiteCRM specific
-/public/legacy/cache/
-/public/legacy/upload/
-/public/legacy/custom/history/
-/public/legacy/config_override.php
-
-# Backup or export files
+# Backup or archive files
 *.zip
-*.tar.gz
-*.bak
-*.old
-*.swp
+*.tar
+*.gz
+*.rar
 
-# NPM lock (optional - uncomment if you don’t want to commit)
-# package-lock.json
+# Apache / webserver generated files
+app/.htaccess
 
-app_old
+# =========================================
+# Optional: if you keep generated assets outside Git
+# =========================================
+# app/public/js/
+# app/public/css/
+# app/public/images/
