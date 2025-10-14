@@ -1,30 +1,25 @@
-# =========================================
-# SuiteCRM / Laravel-style ignore rules
-# Project lives in "app/" folder
-# =========================================
-
 # Composer dependencies
-app/vendor/
-app/composer.lock
+vendor/
+composer.lock
 
 # Node dependencies and build outputs
-app/node_modules/
-app/package-lock.json
-app/yarn.lock
-app/dist/
-app/build/
-app/.cache/
+node_modules/
+package-lock.json
+yarn.lock
+dist/
+build/
+.cache/
 
 # Cache and temporary files
-app/cache/
-app/custom/history/
-app/upload/
-app/var/
-app/tmp/
-app/storage/
-app/logs/
-app/session/
-app/public/var/
+cache/
+custom/history/
+upload/
+var/
+tmp/
+storage/
+logs/
+session/
+public/var/
 
 # IDE / Editor files
 .vscode/
@@ -41,14 +36,14 @@ Thumbs.db
 # Environment / config
 # .env
 .env.*
-app/.env
-app/config.php
+.env
+config.php
 
 # Logs
 *.log
-app/*.log
-app/logs/*
-app/error_log
+*.log
+logs/*
+error_log
 
 # Backup or archive files
 *.zip
@@ -57,11 +52,11 @@ app/error_log
 *.rar
 
 # Apache / webserver generated files
-app/.htaccess
+.htaccess
 
 # =========================================
 # Optional: if you keep generated assets outside Git
 # =========================================
-# app/public/js/
-# app/public/css/
-# app/public/images/
+# public/js/
+# public/css/
+# public/images/
