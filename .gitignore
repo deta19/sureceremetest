@@ -35,8 +35,8 @@ Thumbs.db
 
 # Environment / config
 # .env
-.env.*
-.env
+# .env.*
+# .env
 config.php
 
 # Logs
